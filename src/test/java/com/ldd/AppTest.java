@@ -54,17 +54,6 @@ public class AppTest {
 
     }
 
-    @Test
-    @Transient
-    @Rollback(true)
-    public void rollTest() throws IOException {
-
-        File file = new File("d:\\ldd.txt");
-        file.createNewFile();
-        System.out.println("mk file");
-
-
-    }
     @After
     public void finish(){
         food = null;
